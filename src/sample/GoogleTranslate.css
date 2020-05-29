@@ -1,0 +1,6 @@
+.root
+{
+    -fx-background-image: url("googleBackgound.jpg");
+    -fx-background-size: 700 350;
+    -fx-background-position: center center;
+}

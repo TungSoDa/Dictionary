@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FixController">
+   <children>
+      <TextField fx:id="textFieldFixWord" layoutX="100.0" layoutY="14.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter English word" />
+      <TextField fx:id="textFieldNewMeaning" layoutX="221.0" layoutY="83.0" prefHeight="35.0" prefWidth="180.0" />
+      <Text fill="#dfee16" layoutX="39.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old meaing" textAlignment="CENTER" wrappingWidth="100.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#dfee16" layoutX="261.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New meaing" textAlignment="CENTER" wrappingWidth="100.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="button3" layoutX="160.0" layoutY="151.0" mnemonicParsing="false" onAction="#fix" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: yellow;" text="Confirm" />
+      <WebView fx:id="webViewOldMeaing" layoutX="-1.0" layoutY="83.0" onDragDetected="#showOldMeaing" onKeyReleased="#oldMeaing" prefHeight="35.0" prefWidth="180.0" />
+   </children>
+</Pane>

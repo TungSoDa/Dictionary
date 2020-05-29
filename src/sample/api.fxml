@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.APIController">
+   <children>
+      <WebView fx:id="webView" layoutX="25.0" layoutY="216.0" opacity="0.75" prefHeight="120.0" prefWidth="650.0" />
+      <Button fx:id="apiEV" layoutX="100.0" layoutY="150.0" mnemonicParsing="false" onAction="#TranslateAPI" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: grey;" text="E-V" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/translate.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="25.0" layoutY="14.0" opacity="0.75" prefHeight="120.0" prefWidth="650.0" promptText="Enter text to translate" />
+      <Button fx:id="apiVE" layoutX="461.0" layoutY="150.0" mnemonicParsing="false" onAction="#TranslateAPI" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: grey;" text="V-E" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/translate.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

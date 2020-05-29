@@ -1,0 +1,6 @@
+.root
+{
+    -fx-background-image: url("library.jpg");
+    -fx-background-size: 1200 600;
+    -fx-background-position: center center;
+}
